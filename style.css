@@ -200,6 +200,58 @@ nav a:hover {
 .playstore { background: #000; color: #fff; }
 .appstore { background: #000; color: #fff; }
 
+.hero {
+  padding: 160px 20px 100px;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  text-align: center;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-image {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 48px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
+  border: 14px solid #111;
+}
+
+/* Larger screens - side by side layout */
+@media (min-width: 992px) {
+  .hero .container {
+    flex-direction: row;
+    text-align: left;
+    gap: 80px;
+    align-items: center;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-image {
+    flex: 1;
+    max-width: 420px;
+    margin: 0;
+  }
+}
 /* Video Section */
 .gameplay {
   padding: 100px 20px;
