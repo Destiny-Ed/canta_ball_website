@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.logo img {
+  height: 42px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 2.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.btn-primary {
+  background: #ff9800;
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ffb74d;
+  transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+  padding: 180px 20px 120px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4.2rem;
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+
+.accent {
+  color: #ff9800;
+}
+
+.tagline {
+  font-size: 1.35rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.store-btn img {
+  height: 56px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.store-btn:hover img {
+  transform: scale(1.05);
+}
+
+/* Features */
+/* Features Section - 2x2 Grid */
+.features {
+  padding: 100px 20px;
+  background: #111;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #1a1a1a;
+  padding: 40px 32px;
+  border-radius: 24px;
+  border: 1px solid #333;
+  transition: all 0.4s ease;
+  text-align: center;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-12px);
+  border-color: #ff9800;
+  box-shadow: 0 15px 40px rgba(255, 152, 0, 0.18);
+}
+
+.feature-card i {
+  font-size: 3.2rem;
+  color: #ff9800;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+/* Store Buttons */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.store-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.store-btn i {
+  font-size: 28px;
+}
+
+.playstore { background: #000; color: #fff; }
+.appstore { background: #000; color: #fff; }
+
+/* Video Section */
+.gameplay {
+  padding: 100px 20px;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* Download */
+.download {
+  padding: 120px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #111, #0a0a0a);
+}
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  padding: 80px 20px 40px;
+  border-top: 1px solid #222;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  color: #ff9800;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid #222;
+  color: #666;
+  font-size: 0.95rem;
+}
